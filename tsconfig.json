@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",
+        "moduleResolution": "node",
+        "lib": ["es6", "dom"],
+
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "newLine": "LF",
+        "noEmitOnError": true,
+
+        "strict": true,
+        "noUnusedLocals": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

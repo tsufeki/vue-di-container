@@ -1,0 +1,65 @@
+{
+    "name": "vue-di-container",
+    "version": "0.1.0",
+    "description": "Dependency injection container for Vue",
+    "keywords": [
+        "vue",
+        "dependency injection",
+        "di",
+        "injector",
+        "ioc"
+    ],
+    "license": "MIT",
+    "author": "tsufeki <tsufeki@ymail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tsufeki/vue-di-container.git"
+    },
+    "homepage": "https://github.com/tsufeki/vue-di-container#readme",
+    "bugs": {
+        "url": "https://github.com/tsufeki/vue-di-container/issues"
+    },
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist/ && tsc --project tsconfig.build.json",
+        "lint": "tslint -t verbose '{src,spec}/**/*.ts'",
+        "test": "jasmine",
+        "test:cov": "nyc jasmine"
+    },
+    "peerDependencies": {
+        "vue": "^2.5"
+    },
+    "dependencies": {
+        "reflect-metadata": "^0.1"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^3.3",
+        "@vue/test-utils": "^1.0.0-beta.27",
+        "jasmine": "^3.3",
+        "jasmine-spec-reporter": "^4.2",
+        "jsdom": "^13.0",
+        "jsdom-global": "^3.0",
+        "nyc": "^13.1",
+        "ts-node": "^7.0",
+        "tslint": "^5.11",
+        "typescript": "3.2.*",
+        "vue": "^2.5",
+        "vue-class-component": "^6.3",
+        "vue-template-compiler": "^2.5"
+    },
+    "nyc": {
+        "extension": [
+            ".ts"
+        ],
+        "include": [
+            "src/**/*.ts"
+        ],
+        "reporter": [
+            "html"
+        ]
+    }
+}
