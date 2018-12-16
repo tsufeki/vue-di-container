@@ -117,4 +117,4 @@ class ComponentC {}
 License
 -------
 
-MIT, see [LICENSE]('LICENCE').
+MIT, see [LICENSE](LICENSE).
