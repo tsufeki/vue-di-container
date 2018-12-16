@@ -1,5 +1,5 @@
 import { Metadata } from './metadata';
-import { Key } from './providers';
+import { Key, Token as _ } from './providers';
 import { Ctor, decorator } from './util';
 
 export const Inject = Object.assign((key?: Key<any>): PropertyDecorator & ParameterDecorator => {
