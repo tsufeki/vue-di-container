@@ -14,3 +14,13 @@ script:
     - npm run build
     - npm run lint
     - npm run test
+
+deploy:
+    provider: npm
+    email: tsufeki@ymail.com
+    api_key:
+        secure: Ufg970DsZ8eF+guEbrChqxhEsWcTX8JVSddIU0ocd9WekssP1F+RSKZRUl2j52X6SqXAImY6jf6kRJVtTQGHgWXq3HxysPkRot91i2Wh4oU1YiDaK3sTwUcg/VEX3D5QLOKLi+lFslGZMqeWtSLLcW6dwVzHAvhnt52IOCERMG2pL37f2nlaj7A7iy48mXa8AFf0N+TVv2wYm+MalwO2vgPh7Tm96ViujT2hD4PDjyszYZGGMH95Y+p9hwYZk2s3DHqX21eyvRJi+9sfq3zRy8G0CisImxzEj0CfE2ggObRPxmYHUGUeQEnmkG25mPVGxvJbdmBBDnYIt1fuiw/ksEwH5QAaYJj1h0HMzA1wwIyv/eGQx2Oflfl293p5h5mGlBkVMn1gKQcZON0JChfIY/ezyP7X7gyyzJeiyItlnTMyQstMNL+dXr7asrOZujTjpeW6lI9fZH4gihgq/0UUNNDYf5ipTz2gHF9K6wvStapH9pAhjhKHkvxhPcrF4DXt1AbjxabY/e/GhqJpfKP5cTVgVnLUZZj1Av+H4LEbZUahpYcmAfqD3MM0+MVbK5BM6+V/pg1INRgAP0HwbzQOuNpIH2xh1NIq24ZYrXOxp4WKmEcQyVfdgsO5OOEiPdSJzO/aPXJvqlZatwbpXiPRU6zu1JJNDTc6ZT4fVtDPwU8=
+    on:
+        tags: true
+        repo: tsufeki/vue-di-container
+    skip_cleanup: true
