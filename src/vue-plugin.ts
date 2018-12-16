@@ -2,22 +2,7 @@ import Vue_, { ComponentOptions } from 'vue';
 import { Container } from './container';
 import { Inject, Service } from './decorators';
 import { Metadata } from './metadata';
-import { PropertyKeys, Provider } from './providers';
 import { Ctor } from './util';
-
-declare module 'vue/types/vue' {
-    interface Vue {
-        $diContainer: Container;
-    }
-}
-
-declare module 'vue/types/options' {
-    interface ComponentOptions<V extends Vue_> {
-        diContainer?: Container;
-        diProvide?: Provider<any>[];
-        diInject?: PropertyKeys;
-    }
-}
 
 /* A hack to retain metadata from original class when using @Component decorator. */
 function setupVueClassComponentCompat() {

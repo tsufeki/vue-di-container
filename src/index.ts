@@ -13,6 +13,7 @@ import {
 } from './definitions';
 import { Metadata } from './metadata';
 import { Reflection } from './reflection';
+import './vue';
 import { VueDiContainerConstructor } from './vue-plugin';
 
 const reflection = new Reflection();
